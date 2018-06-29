@@ -4,4 +4,6 @@
 
 18/10/2017	JKS		UpdateForm definition in QAResultsScript.py now read BeamName instead of BeamDescription as description is not a mandatory tag and mayn't be available for some beams which results in a crash
 
-01/06/2018  	JL      	Rewrite CopyDynasFludoPy.ps.ps1 to use Patient MRN instead of time filter
+01/06/2018   JL      Rewrite CopyDynasFludoPy.ps.ps1 to use Patient MRN instead of time filter
+
+25/06/2018  JKS     Modified definition UpdateForm in QAResultsScript.py to fill DOB with XXXX-XX-XX if its empty
