@@ -13,7 +13,7 @@ from pylab import rcParams
 import QAResultsScript as QAResults
 # FluDo script imports
 import RTPlanParse
-from GUI.MainWindow import Ui_MainWindow
+from MainWindow import Ui_MainWindow
 
 rcParams['figure.figsize'] = 17, 12
 
@@ -48,7 +48,7 @@ class StartQT(QtWidgets.QMainWindow):
         self.ui.textEditInfo.append("--------------------------------------FluDoPy------------------------------------------------------------------------")
         self.ui.pushButtonAnalyse.clicked.connect(self.Analyse)
         self.ui.pushButtonDB.clicked.connect(self.pushResultsToDB)
-        self.PowerShellPath = os.getcwd() + '\\' + 'CopyDynasFluDoPy_v2.ps'
+        self.PowerShellPath = os.getcwd() + '\\' + 'CopyDynasFluDoPy.ps'
 
 
 

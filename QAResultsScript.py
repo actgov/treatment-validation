@@ -19,7 +19,7 @@ import DynaCollector
 import PinRTPlanDCM as pdcm
 import TimeDialogScript as TDScript
 from Dyn_to_Dose import Dyn_to_Dose as d2d
-from GUI.QAResultsForm import Ui_Dialog
+from QAResultsForm import Ui_Dialog
 
 
 class QAResultsDlg(QtWidgets.QDialog,Ui_Dialog):
@@ -232,7 +232,7 @@ class QAResultsDlg(QtWidgets.QDialog,Ui_Dialog):
             #CopyDyns = sp.call(["C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe", '-ExecutionPolicy',
                                 #'Unrestricted', '-WindowStyle', 'maximized', self.PowerShellPath, arg0, arg1])
             CopyDyns = sp.call(["C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe", '-ExecutionPolicy',
-                                'Unrestricted','-WindowStyle','Normal',self.PowerShellPath, arg0, arg1, self.PatID])
+                                'Unrestricted','-WindowStyle','Normal',self.PowerShellPath, arg0, arg1])
             # QtGui.QApplication.restoreOverrideCursor()
             # ************************************End Get_Dynalogs*******************************************************
 

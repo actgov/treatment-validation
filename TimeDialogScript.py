@@ -2,7 +2,7 @@ import sys
 
 from PyQt5 import QtGui, QtWidgets
 
-from GUI.TimeDialog import Ui_TimeDialog
+from TimeDialog import Ui_TimeDialog
 
 
 class TimeDlg(QtWidgets.QDialog,Ui_TimeDialog):
